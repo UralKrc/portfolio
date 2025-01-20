@@ -18,6 +18,17 @@ export const siteMetadata: Metadata = {
   ],
   authors: [{ name: "Ural Karaca" }],
   creator: "Ural Karaca",
+  icons: {
+    icon: "/icon-512x512.png",
+    shortcut: "/favicon.ico",
+    apple: "/icon-192x192.png",
+    other: {
+      rel: "apple-touch-icon-precomposed",
+      url: "/icon-192x192.png",
+    },
+  },
+  manifest: "/manifest.json",
+  themeColor: "#6B46C1",
   openGraph: {
     type: "website",
     locale: "en_US",
