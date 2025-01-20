@@ -3,23 +3,13 @@
 import { businessInfo } from "@/constants/business";
 import {
   GithubOutlined,
+  InstagramOutlined,
   LinkedinOutlined,
   MailOutlined,
 } from "@ant-design/icons";
 import { motion } from "framer-motion";
 import { FC } from "react";
-import { SocialLinkProps } from "../types";
-
-const SocialLink: FC<SocialLinkProps> = ({ href, icon, external = true }) => (
-  <a
-    href={href}
-    target={external ? "_blank" : undefined}
-    rel={external ? "noopener noreferrer" : undefined}
-    className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
-  >
-    {icon}
-  </a>
-);
+import { SocialLink } from "./SocialLink";
 
 export const SocialLinks: FC = () => {
   return (
@@ -36,6 +26,10 @@ export const SocialLinks: FC = () => {
       <SocialLink
         href={businessInfo.social.linkedin}
         icon={<LinkedinOutlined className="text-xl" />}
+      />
+      <SocialLink
+        href={businessInfo.social.instagram}
+        icon={<InstagramOutlined className="text-xl" />}
       />
       <SocialLink
         href="#contact"

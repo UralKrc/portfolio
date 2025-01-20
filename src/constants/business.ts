@@ -25,6 +25,7 @@ interface Social {
   github: string;
   linkedin: string;
   email: string;
+  instagram: string;
 }
 
 interface BusinessInfo {
@@ -58,6 +59,7 @@ export const businessInfo: BusinessInfo = {
   social: {
     github: "https://github.com/uralkaraca",
     linkedin: "https://linkedin.com/in/ural-karaca",
-    email: "ur.karaca@gmail.com",
+    email: "mailto:ur.karaca@gmail.com?subject=Work Inquiry&body=Hi Ural,",
+    instagram: "https://www.instagram.com/uralkaraca/",
   },
 } as const;

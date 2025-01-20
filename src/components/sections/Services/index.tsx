@@ -6,9 +6,9 @@ import { ServiceCard } from "./components/ServiceCard";
 import { ServicesSectionProps } from "./types";
 import { SERVICES } from "./utils/services";
 
-export const Services: FC<ServicesSectionProps> = ({ className }) => {
+export const Services: FC<ServicesSectionProps> = ({ className = "" }) => {
   return (
-    <section id="services" className="py-24 lg:py-32">
+    <section id="services" className={`py-24 lg:py-32 ${className}`}>
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

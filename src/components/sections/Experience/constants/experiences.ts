@@ -54,7 +54,6 @@ export const experiences: Experience[] = [
       "JavaScript",
       "CSS-in-JS",
       "Recharts",
-      "JavaScript",
       "Jest",
       "Storybook",
     ],

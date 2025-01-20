@@ -9,7 +9,7 @@ import { HeroSectionProps } from "./types";
 
 export const Hero: FC<HeroSectionProps> = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-8 lg:px-16 py-32 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-8 lg:px-16 py-24 lg:py-32 overflow-hidden">
       {/* Animated background pattern */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-white dark:from-gray-900 dark:to-gray-800" />
@@ -20,8 +20,8 @@ export const Hero: FC<HeroSectionProps> = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-        <div className="space-y-8">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+        <div className="space-y-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -37,7 +37,7 @@ export const Hero: FC<HeroSectionProps> = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="space-y-4"
+            className="space-y-6"
           >
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400">
@@ -98,25 +98,18 @@ export const Hero: FC<HeroSectionProps> = () => {
           <SocialLinks />
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="relative hidden lg:block"
-        >
+        <div className="relative hidden lg:block">
           <div className="relative w-full aspect-square">
             <div className="absolute inset-0 bg-gradient-to-br from-purple-100 to-pink-100 dark:from-purple-900/20 dark:to-pink-900/20 rounded-3xl transform rotate-6" />
             <div className="absolute inset-0 bg-gradient-to-br from-purple-100 to-pink-100 dark:from-purple-900/20 dark:to-pink-900/20 rounded-3xl transform -rotate-6" />
             <div className="absolute inset-0 bg-black/90 dark:bg-gray-950 rounded-2xl shadow-2xl overflow-hidden">
-              {/* Digital Display */}
               <div className="absolute inset-0 flex flex-col items-center justify-center p-8">
                 <SkillDisplay skills={HERO_SKILLS} />
-                {/* Scan Line Effect */}
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-500/5 to-transparent animate-scan" />
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

@@ -11,7 +11,7 @@ import { BusinessCard } from "./components/BusinessCard";
 import { BusinessDetailsSectionProps } from "./types";
 
 export const BusinessDetails: FC<BusinessDetailsSectionProps> = ({
-  className,
+  className = "",
 }) => {
   const cards = [
     {
@@ -47,7 +47,7 @@ export const BusinessDetails: FC<BusinessDetailsSectionProps> = ({
   ];
 
   return (
-    <section className="my-24 lg:py-16 bg-white dark:bg-gray-900">
+    <section className={`py-24 lg:py-32 ${className}`}>
       <div className="container mx-auto px-4 max-w-5xl">
         <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
           Business Details

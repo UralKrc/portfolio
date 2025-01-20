@@ -35,6 +35,7 @@ const config: Config = {
         blob: "blob 7s infinite",
         scan: "scan 2s linear infinite",
         pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        float: "float 6s ease-in-out infinite",
       },
       keyframes: {
         "fade-in": {
@@ -66,6 +67,10 @@ const config: Config = {
         scan: {
           "0%": { transform: "translateY(-100%)" },
           "100%": { transform: "translateY(100%)" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
         },
       },
       utilities: {

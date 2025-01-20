@@ -5,10 +5,9 @@ export interface ProjectsSectionProps {
 export interface Project {
   title: string;
   description: string;
-  tech: string[];
   image: string;
-  external: string | null;
-  github: string | null;
+  stack: string[];
+  link: string;
 }
 
 export interface ProjectCardProps {

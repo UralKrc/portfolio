@@ -1,5 +1,7 @@
+import { businessInfo } from "@/constants/business";
 import {
   GithubOutlined,
+  InstagramOutlined,
   LinkedinOutlined,
   MailOutlined,
 } from "@ant-design/icons";
@@ -25,19 +27,25 @@ export const Footer: FC = () => {
               <Button
                 type="text"
                 icon={<GithubOutlined />}
-                href="https://github.com/UralKrc"
+                href={businessInfo.social.github}
                 target="_blank"
               />
               <Button
                 type="text"
                 icon={<LinkedinOutlined />}
-                href="https://linkedin.com/in/uralkaraca"
+                href={businessInfo.social.linkedin}
+                target="_blank"
+              />
+              <Button
+                type="text"
+                icon={<InstagramOutlined />}
+                href={businessInfo.social.instagram}
                 target="_blank"
               />
               <Button
                 type="text"
                 icon={<MailOutlined />}
-                href="mailto:ur.karaca@gmail.com"
+                href={businessInfo.social.email}
               />
             </Space>
             <p className="text-sm text-gray-500 dark:text-gray-400">

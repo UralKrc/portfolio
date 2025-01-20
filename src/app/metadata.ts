@@ -1,4 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+
+export const viewport: Viewport = {
+  themeColor: "#6B46C1",
+};
 
 export const siteMetadata: Metadata = {
   title: "Ural Karaca | Senior Frontend Developer",
@@ -19,16 +23,14 @@ export const siteMetadata: Metadata = {
   authors: [{ name: "Ural Karaca" }],
   creator: "Ural Karaca",
   icons: {
-    icon: "/icon-512x512.png",
-    shortcut: "/favicon.ico",
-    apple: "/icon-192x192.png",
-    other: {
-      rel: "apple-touch-icon-precomposed",
-      url: "/icon-192x192.png",
-    },
+    icon: [
+      { url: "/icons/u-icon.svg" },
+      { url: "/icon-512x512.png", type: "image/png", sizes: "512x512" },
+    ],
+    shortcut: ["/icons/u-icon.svg"],
+    apple: [{ url: "/icon-192x192.png", sizes: "192x192", type: "image/png" }],
   },
   manifest: "/manifest.json",
-  themeColor: "#6B46C1",
   openGraph: {
     type: "website",
     locale: "en_US",

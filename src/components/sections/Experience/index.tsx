@@ -7,12 +7,12 @@ import { experiences } from "./constants/experiences";
 import { useExperienceAnimation } from "./hooks/useExperienceAnimation";
 import { ExperienceSectionProps } from "./types";
 
-export const Experience: FC<ExperienceSectionProps> = ({ className }) => {
+export const Experience: FC<ExperienceSectionProps> = ({ className = "" }) => {
   const [activeTab, setActiveTab] = useState(0);
   const { contentVariants, listItemVariants } = useExperienceAnimation();
 
   return (
-    <section id="experience" className="py-24 lg:py-32">
+    <section id="experience" className={`py-24 lg:py-32 ${className}`}>
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -26,7 +26,7 @@ export const Experience: FC<ExperienceSectionProps> = ({ className }) => {
               <span className="font-mono text-purple-600 dark:text-purple-400 mr-4">
                 02.
               </span>
-              Where I've Worked
+              Where I&apos;ve Worked
             </h2>
             <div className="flex-grow h-px bg-gradient-to-r from-purple-200 dark:from-purple-800 to-transparent" />
           </div>

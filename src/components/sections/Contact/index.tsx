@@ -5,12 +5,9 @@ import { FC } from "react";
 import { ContactButton } from "./components/ContactButton";
 import { ContactSectionProps } from "./types";
 
-export const Contact: FC<ContactSectionProps> = ({ className }) => {
+export const Contact: FC<ContactSectionProps> = ({ className = "" }) => {
   return (
-    <section
-      id="contact"
-      className="py-16 lg:py-20 bg-gray-50 dark:bg-gray-800"
-    >
+    <section id="contact" className={`py-24 lg:py-32 ${className}`}>
       <div className="container mx-auto px-4 max-w-3xl">
         <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
           Get in Touch
