@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { FC, useState } from "react";
-import { ExperienceTab } from "./components/ExperienceTab";
+import { ExperienceTab } from "./components/experience-tab";
 import { experiences } from "./constants/experiences";
 import { useExperienceAnimation } from "./hooks/useExperienceAnimation";
 import { ExperienceSectionProps } from "./types";

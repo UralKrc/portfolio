@@ -18,6 +18,14 @@ export const FEATURED_PROJECTS: Project[] = [
     link: "https://fivb.com",
   },
   {
+    title: "Blancpain",
+    description:
+      "Contributed to the redesign of Blancpain's luxury watch website, focusing on performance optimization and creating an immersive user experience.",
+    link: "https://blancpain.com",
+    image: "/projects/blancpain.png",
+    stack: ["React", "Next.js", "TypeScript", "GSAP", "Framer Motion"],
+  },
+  {
     title: "Superpeer",
     description:
       "A modern events platform that enables seamless virtual and hybrid event experiences. Contributed to core features including real-time attendee engagement, analytics dashboard, and integration with third-party services.",

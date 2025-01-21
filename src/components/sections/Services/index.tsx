@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { FC } from "react";
-import { ServiceCard } from "./components/ServiceCard";
+import { ServiceCard } from "./components/service-card";
 import { ServicesSectionProps } from "./types";
 import { SERVICES } from "./utils/services";
 

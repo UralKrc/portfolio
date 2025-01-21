@@ -1,9 +1,9 @@
-import { CORE_SKILLS } from "@/components/sections/About/constants/skills";
+import { CORE_SKILLS } from "@/components/sections/about/constants/skills";
+import { FEATURED_PROJECTS } from "@/components/sections/projects/constants/projects";
+import { Project } from "@/components/sections/projects/types";
 import { businessInfo } from "@/constants/business";
 import type { Experience } from "@/constants/experience";
 import { EXPERIENCE } from "@/constants/experience";
-import type { Project } from "@/constants/projects";
-import { FEATURED_PROJECTS } from "@/constants/projects";
 
 export const portfolioJsonLd = {
   "@context": "https://schema.org",

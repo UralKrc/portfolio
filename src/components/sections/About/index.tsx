@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { FC } from "react";
-import { SkillsList } from "./components/SkillsList";
+import { SkillsList } from "./components/skill-list";
 import { AboutSectionProps } from "./types";
 
 export const About: FC<AboutSectionProps> = ({ className = "" }) => {

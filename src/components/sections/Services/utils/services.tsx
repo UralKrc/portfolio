@@ -6,7 +6,7 @@ import {
   FrontendIcon,
   LeadershipIcon,
   TestingIcon,
-} from "../components/ServiceIcons";
+} from "../components/service-icons/service-icons";
 import { Service } from "../types";
 
 export const SERVICES: Service[] = [

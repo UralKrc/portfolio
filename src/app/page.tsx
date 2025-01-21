@@ -1,13 +1,14 @@
 "use client";
 
-import { LoadingScreen } from "@/components/LoadingScreen";
-import { About } from "@/components/sections/About";
-import { Contact } from "@/components/sections/Contact";
-import { Experience } from "@/components/sections/Experience";
-import { Hero } from "@/components/sections/Hero";
-import { OpenSource } from "@/components/sections/OpenSource";
-import { Projects } from "@/components/sections/Projects";
-import { Services } from "@/components/sections/Services";
+import { LoadingScreen } from "@/components/loading-screen";
+import { About } from "@/components/sections/about";
+import { BusinessDetails } from "@/components/sections/business-details";
+import { ContactDetails } from "@/components/sections/contact-details";
+import { Experience } from "@/components/sections/experience";
+import { Hero } from "@/components/sections/hero";
+import { OpenSource } from "@/components/sections/open-source";
+import { Projects } from "@/components/sections/projects";
+import { Services } from "@/components/sections/services";
 import { AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
@@ -27,7 +28,8 @@ export default function Home() {
             <Projects />
             <OpenSource />
             <Services />
-            <Contact />
+            <BusinessDetails />
+            <ContactDetails />
           </main>
         )}
       </AnimatePresence>

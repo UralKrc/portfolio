@@ -46,8 +46,8 @@ export const businessInfo: BusinessInfo = {
   },
   address: {
     street: "Krekelplantsoen 1",
-    postalCode: "1016 EJ",
-    city: "Amsterdam",
+    postalCode: "1338 KT",
+    city: "Almere",
     country: "Netherlands",
     remote: true,
   },
@@ -57,7 +57,7 @@ export const businessInfo: BusinessInfo = {
     type: "Freelance / Contract",
   },
   social: {
-    github: "https://github.com/uralkaraca",
+    github: "https://github.com/UralKrc",
     linkedin: "https://linkedin.com/in/ural-karaca",
     email: "mailto:ur.karaca@gmail.com?subject=Work Inquiry&body=Hi Ural,",
     instagram: "https://www.instagram.com/uralkaraca/",

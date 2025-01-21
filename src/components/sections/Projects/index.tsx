@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { FC } from "react";
-import { ProjectCard } from "./components/ProjectCard";
+import { ProjectCard } from "./components/project-card";
 import { FEATURED_PROJECTS } from "./constants/projects";
 import { ProjectsSectionProps } from "./types";
 

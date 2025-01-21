@@ -73,6 +73,71 @@ const config: Config = {
           "50%": { transform: "translateY(-10px)" },
         },
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: "65ch",
+            color: "rgb(var(--foreground-rgb))",
+            '[class~="lead"]': {
+              color: "rgb(var(--foreground-rgb))",
+            },
+            a: {
+              color: "#9333ea",
+              "&:hover": {
+                color: "#7e22ce",
+              },
+            },
+            strong: {
+              color: "rgb(var(--foreground-rgb))",
+            },
+            "ol > li::marker": {
+              color: "rgb(var(--foreground-rgb))",
+            },
+            "ul > li::marker": {
+              color: "rgb(var(--foreground-rgb))",
+            },
+            hr: {
+              borderColor: "rgb(var(--foreground-rgb))",
+            },
+            blockquote: {
+              borderLeftColor: "#9333ea",
+              color: "rgb(var(--foreground-rgb))",
+            },
+            h1: {
+              color: "rgb(var(--foreground-rgb))",
+            },
+            h2: {
+              color: "rgb(var(--foreground-rgb))",
+            },
+            h3: {
+              color: "rgb(var(--foreground-rgb))",
+            },
+            h4: {
+              color: "rgb(var(--foreground-rgb))",
+            },
+            "figure figcaption": {
+              color: "rgb(var(--foreground-rgb))",
+            },
+            code: {
+              color: "rgb(var(--foreground-rgb))",
+            },
+            "a code": {
+              color: "#9333ea",
+            },
+            pre: {
+              color: "rgb(var(--foreground-rgb))",
+              backgroundColor: "rgb(var(--background-rgb))",
+            },
+            thead: {
+              color: "rgb(var(--foreground-rgb))",
+              borderBottomColor: "rgb(var(--foreground-rgb))",
+            },
+            "tbody tr": {
+              borderBottomColor: "rgb(var(--foreground-rgb))",
+            },
+          },
+        },
+      },
       utilities: {
         ".animation-delay-2000": {
           "animation-delay": "2s",
@@ -83,7 +148,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
 
 export default config;
