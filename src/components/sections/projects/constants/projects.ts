@@ -12,7 +12,7 @@ export const FEATURED_PROJECTS: Project[] = [
   {
     title: "International Volleyball Federation Website(F.I.V.B)",
     description:
-      "A modern website for the International Volleyball Federation, featuring a responsive layout, a powerful content management system, and a modern design.",
+      "High-performance React application handling 2M+ concurrent users during World Cup. Features real-time match statistics, live scoring, and dynamic content management system.",
     stack: ["React", "TypeScript", "CSS-In-JS", "JavaScript"],
     image: "/projects/fivb.png",
     link: "https://fivb.com",
@@ -28,16 +28,22 @@ export const FEATURED_PROJECTS: Project[] = [
   {
     title: "Superpeer",
     description:
-      "A modern events platform that enables seamless virtual and hybrid event experiences. Contributed to core features including real-time attendee engagement, analytics dashboard, and integration with third-party services.",
-    stack: ["Vue", "Node.js", "Tailwind CSS", "Firebase"],
+      "Video platform enabling creators to monetize through 1:1 calls and content. Built with real-time chat, secure payments, and video streaming for thousands of concurrent users.",
+    stack: ["React", "Node.js", "Tailwind CSS", "Firebase"],
     image: "/projects/superpeer.png",
     link: "https://superpeer.com",
   },
   {
     title: "Floris Van Bommel",
     description:
-      "A modern events platform that enables seamless virtual and hybrid event experiences. Contributed to core features including real-time attendee engagement, analytics dashboard, and integration with third-party services.",
-    stack: ["React", "Redux", "Tailwind CSS", "Jest"],
+      "E-commerce platform modernization integrating Vue.js with Salesforce Commerce Cloud. Implemented modular architecture improving site performance by 60%.",
+    stack: [
+      "Vue.js",
+      "JavaScript",
+      "Salesforce Commerce Cloud",
+      "Jest",
+      "Tailwind CSS",
+    ],
     image: "/projects/floris.png",
     link: "https://florisvanbommel.nl",
   },

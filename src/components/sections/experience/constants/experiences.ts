@@ -42,6 +42,23 @@ export const experiences: Experience[] = [
     industry: "Travel / Logistics",
   },
   {
+    company: "Superpeer",
+    role: "Senior Full-stack Developer",
+    period: "12/2020 - 11/2021",
+    location: "Remote",
+    description:
+      "Architected and implemented a scalable real-time chat system and secure payment integration platform, while leading code reviews and mentoring junior developers to maintain high code quality standards across the team.",
+    stack: [
+      "React",
+      "Node.js",
+      "GetStream.io",
+      "Tailwind CSS",
+      "Firebase",
+      "Payment Integration",
+    ],
+    industry: "Technology / Streaming",
+  },
+  {
     company: "Socio Events (Webex Events)",
     role: "Senior Frontend Developer",
     period: "08/2018 - 12/2020",
@@ -58,23 +75,6 @@ export const experiences: Experience[] = [
       "Storybook",
     ],
     industry: "Events / Technology",
-  },
-  {
-    company: "Superpeer",
-    role: "Senior Full-stack Developer",
-    period: "12/2020 - 11/2021",
-    location: "Remote",
-    description:
-      "Architected and implemented a scalable real-time chat system and secure payment integration platform, while leading code reviews and mentoring junior developers to maintain high code quality standards across the team.",
-    stack: [
-      "React",
-      "Node.js",
-      "GetStream.io",
-      "Tailwind CSS",
-      "Firebase",
-      "Payment Integration",
-    ],
-    industry: "Technology / Streaming",
   },
   {
     company: "Emakina",

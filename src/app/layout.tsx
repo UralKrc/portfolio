@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { JsonLd } from "./JsonLd";
 import { metadata, viewport } from "./metadata";
 import { Providers } from "./providers";
 
@@ -15,7 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} antialiased`}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <JsonLd />
+          {children}
+        </Providers>
       </body>
     </html>
   );

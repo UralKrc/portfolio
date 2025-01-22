@@ -4,9 +4,9 @@ export const siteConfig = {
   name: "Ural Karaca",
   title: "Ural Karaca | Senior Frontend Developer",
   description:
-    "Senior Frontend Developer specializing in React, Next.js, and TypeScript. Building exceptional digital experiences.",
-  url: "https://uralkaraca.dev",
-  ogImage: "https://uralkaraca.dev/og.png",
+    "Senior Frontend Developer specializing in React, Next.js, and TypeScript. Building exceptional digital experiences with modern web technologies.",
+  url: "https://uralkaraca.com",
+  ogImage: "https://uralkaraca.com/og.png",
   links: {
     github: "https://github.com/UralKrc",
     linkedin: "https://linkedin.com/in/uralkaraca",
@@ -14,6 +14,7 @@ export const siteConfig = {
 } as const;
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://uralkaraca.com"),
   title: {
     default: siteConfig.title,
     template: `%s | ${siteConfig.name}`,
@@ -21,10 +22,15 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   keywords: [
     "Frontend Developer",
-    "React",
-    "Next.js",
-    "TypeScript",
-    "Web Development",
+    "React Developer",
+    "Next.js Developer",
+    "TypeScript Developer",
+    "Web Developer",
+    "JavaScript Developer",
+    "Amsterdam",
+    "Netherlands",
+    "Remote Developer",
+    "Ural Karaca",
   ],
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
@@ -53,6 +59,17 @@ export const metadata: Metadata = {
     apple: [{ url: "/icon-192x192.png", sizes: "192x192", type: "image/png" }],
   },
   manifest: "/manifest.json",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export const viewport: Viewport = {
